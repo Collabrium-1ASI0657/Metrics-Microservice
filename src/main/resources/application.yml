@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: metrics-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: ${PORT:8085}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://discovery-server-synhub.onrender.com/eureka/
+  instance:
+    prefer-ip-address: true
